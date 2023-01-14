@@ -1,0 +1,28 @@
+{
+    "type": "postgres",
+    "host": "database-1.c0zhfpvned3q.ap-northeast-2.rds.amazonaws.com",
+    "port": 5432,
+    "username": "postgres",
+    "password": "12345678a",
+    "database": "postgres",
+    "extra": {
+        "ssl": {
+            "rejectUnauthorized": false
+        }
+    },
+    "synchronize": true,
+    "logging": false,
+    "entities": [
+        "src/**/*.entity.ts"
+    ],
+    "migrations": [
+        "src/migration/**/*.ts"
+    ],
+    "subscribers": [
+        "src/subscriber/**/*.ts"
+    ],
+    "cli": {
+        "migrationsDir": "src/migration",
+        "subscribersDir": "src/subscriber"
+    }
+}

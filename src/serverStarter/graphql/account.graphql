@@ -1,0 +1,8 @@
+type Account {
+    id: Number!
+    password: String!
+};
+
+type Query {
+    getAllAccount: [Account]
+};
